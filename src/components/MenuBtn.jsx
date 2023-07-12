@@ -71,10 +71,22 @@ const MenuBtn = () => {
             <div className="socials">
               <p>SOCIALS</p>
               <ul>
-                <a>Awwwwards</a>
-                <a>Instagram</a>
-                <a>GitHub</a>
-                <a>LinkedIn</a>
+                <a href="/">Awwwwards</a>
+                <a
+                  href="https://www.instagram.com/vivekumar27_/"
+                  target="_blank"
+                >
+                  Instagram
+                </a>
+                <a href="https://github.com/Vivek-27" target="_blank">
+                  GitHub
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/vivek-kumar-8b8a0b246/"
+                  target="_blank"
+                >
+                  LinkedIn
+                </a>
               </ul>
             </div>
           </div>

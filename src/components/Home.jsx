@@ -73,8 +73,18 @@ const Home = () => {
           </h2>
         </div>
         <div className="mid">
-          <button>vivekvb@protonmail.com</button>
-          <button>+91 8439872415</button>
+          <button
+            onClick={() => {
+              window.location = 'mailto:vivekvb@protonmail.com';
+            }}
+          >
+            vivekvb@protonmail.com
+          </button>
+          <button>
+            <a style={{ color: 'white' }} href="tel:+91 8439872415">
+              +91 8439872415
+            </a>
+          </button>
         </div>
         <div className="end">
           <div className="left">
@@ -90,10 +100,19 @@ const Home = () => {
           <div className="right">
             <p>SOCIALS</p>
             <ul>
-              <a>Awwwwards</a>
-              <a>Instagram</a>
-              <a>GitHub</a>
-              <a>LinkedIn</a>
+              <a href="/">Awwwwards</a>
+              <a href="https://www.instagram.com/vivekumar27_/" target="_blank">
+                Instagram
+              </a>
+              <a href="https://github.com/Vivek-27" target="_blank">
+                GitHub
+              </a>
+              <a
+                href="https://www.linkedin.com/in/vivek-kumar-8b8a0b246/"
+                target="_blank"
+              >
+                LinkedIn
+              </a>
             </ul>
           </div>
         </div>

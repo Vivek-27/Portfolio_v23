@@ -6,6 +6,7 @@ const NavBar = () => {
   const [menu, setMenu] = useState(false);
   const [anim, setAnim] = useState('ease-in-right');
   const [page, setPage] = useState('');
+  const [navAbout, setNavAbout] = useState('');
 
   const location = useLocation();
 
@@ -16,6 +17,9 @@ const NavBar = () => {
     }
     if (location.pathname === '/contact') {
       setPage('contact');
+      setNavAbout('nav-about');
+    } else {
+      setNavAbout('');
     }
     if (location.pathname === '/about') {
       setPage('about');
@@ -97,7 +101,7 @@ const NavBar = () => {
       ) : (
         ''
       )}
-      <nav className="navigation">
+      <nav className={`navigation ${navAbout}`}>
         <div className="nav">
           <div className="logo">
             <Link className="nav-link" to="/">

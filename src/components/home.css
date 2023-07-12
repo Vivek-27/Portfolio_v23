@@ -298,6 +298,20 @@
   object-fit: cover;
   margin-right: 20px;
   margin-bottom: 0;
+  cursor: pointer;
+}
+#page3 > .top > h2 > .passport-img:hover {
+  animation: rotate-img 5s forwards;
+}
+@keyframes rotate-img {
+  0% {
+  }
+  25% {
+    transform: rotate(60deg);
+  }
+  100% {
+    transform: translate(0deg);
+  }
 }
 
 #page3 > .mid {
@@ -373,6 +387,7 @@
   font-size: 18px;
   font-weight: 500;
   color: #ffffff;
+  cursor: pointer;
 }
 
 @media (max-width: 900px) {

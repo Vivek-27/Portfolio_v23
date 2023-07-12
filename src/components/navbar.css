@@ -6,6 +6,26 @@
   animation: ease-in-bottom 1.5s forwards;
 }
 
+.nav-about {
+  background-color: #1c1d20;
+  color: #ffffff !important;
+}
+
+.nav-about .nav-link {
+  color: #ffffff;
+}
+.nav-about .nav-link p {
+  color: #ffffff;
+}
+
+.nav-about h1 {
+  color: #ffffff !important;
+}
+
+.nav-about .nav-menu {
+  color: #fff;
+}
+
 @keyframes ease-in-bottom {
   from {
     transform: translate(0%, 50%);
@@ -55,7 +75,7 @@
   margin-top: 10px;
   padding-left: 0px;
   opacity: 100%;
-  animation: blink-animation 0.1s forwards;
+  animation: blink-animation 0.2s forwards;
 }
 
 @keyframes blink-animation {
