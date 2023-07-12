@@ -276,7 +276,7 @@ a {
 
 @media (max-width: 900px) {
   .navigation {
-    padding: 25px 15px;
+    padding: 15px 15px;
   }
   .nav {
     display: flex;
@@ -305,18 +305,11 @@ a {
   .blinkBlock {
     width: 0.7em;
     height: 0.55em;
-    background: #21a7ea;
-    display: flex;
-    align-items: center;
-    padding-left: 4px;
-    margin-right: 6px;
-    font-family: 'Righteous', cursive;
-    border-radius: 2px;
   }
 
   .blinkBlock h6 {
     font-size: 20px;
-    color: #ffffff;
+    color: #3f3f3f;
   }
 }
 
