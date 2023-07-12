@@ -19,8 +19,8 @@
 
 .hero > .right > p {
   position: absolute;
-  font-size: 2.8vw;
-  right: 5%;
+  font-size: 2.3vw;
+  right: 5.5%;
   top: 25%;
   color: #fff;
   line-height: 4vw;
@@ -50,14 +50,14 @@
 
 .hero > .left > h4 {
   font-weight: 300;
-  font-size: 0.9em;
+  font-size: 7vw;
   animation: ease-in-bottom 0.5s linear !important;
 }
 .animated-image {
   position: relative;
-  width: 900px;
+  width: 700px;
   height: auto;
-  left: 50%;
+  left: 55%;
   opacity: 1;
   background-color: #e5e5e5;
   animation: ease-in-bottom 1s forwards;
@@ -85,6 +85,11 @@
     font-weight: 400;
     line-height: 90px;
     mix-blend-mode: soft-light;
+  }
+  .hero > .left > h1 {
+    font-size: 25vw;
+    color: #fff;
+    bottom: 5%;
   }
 
   .hero > .left > h4 {
@@ -125,7 +130,6 @@
 
 @media (max-width: 900px) {
   #home > #page2 {
-    width: 100%;
     height: 60vh;
     background-color: #f6f6f6;
     display: flex;
@@ -138,14 +142,14 @@
   #home > #page2 > h4 {
     width: 100%;
     text-align: justify;
-    font-size: 20px;
-    line-height: 35px;
+    font-size: 18px;
+    line-height: 32px;
   }
 
   #page2 > p {
     width: 100%;
     text-align: justify;
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 #loading {
@@ -366,7 +370,7 @@
     width: 90%;
   }
   #page3 > .top > h2 {
-    font-size: 1em;
+    font-size: 10vw;
   }
 
   #page3 > .top > h2 > .passport-img {
@@ -404,11 +408,12 @@
   }
 
   #page3 > .end > .left > .ver > p {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   #page3 > .end > .left > .ver > span {
-    font-size: 14px;
+    font-size: 12px;
+    font-weight: 400;
   }
 
   #page3 > .end > .right {
@@ -419,10 +424,11 @@
   }
 
   #page3 > .end > .right > p {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   #page3 > .end > .right > ul > a {
-    font-size: 14px;
+    font-size: 12px;
+    font-weight: 400;
   }
 }

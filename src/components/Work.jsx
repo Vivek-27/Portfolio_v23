@@ -7,9 +7,7 @@ const Work = () => {
     <>
       <div id="home" className="home">
         <div className="mid-text">
-          <h2>
-            Creating next level <br /> digital products
-          </h2>
+          <h2>Creating next level digital products</h2>
         </div>
         <div className="mid-menu">
           <div className="left">

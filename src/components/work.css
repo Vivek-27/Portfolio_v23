@@ -113,3 +113,33 @@
   height: 0.07em;
   border: 1px solid rgb(204, 204, 204);
 }
+
+@media (max-width: 900px) {
+  #home > .mid-text {
+    width: 90%;
+    padding-top: 30%;
+  }
+
+  #home > .mid-text > h2 {
+    font-size: 12vw;
+    font-weight: 400;
+  }
+
+  #home > .mid-menu {
+    width: 90%;
+    height: 30vw;
+    margin: 0.2em 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #home > .mid-menu > .left > button {
+    padding: 7vw 8vw;
+    font-size: 14px;
+  }
+
+  #home > .mid-menu > .right {
+    display: none;
+  }
+}
