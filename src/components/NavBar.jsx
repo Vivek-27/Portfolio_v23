@@ -105,7 +105,7 @@ const NavBar = () => {
         <div className="nav">
           <div className="logo">
             <Link className="nav-link" to="/">
-              <Blink />{' '}
+              <img src={require('../images/sm-img.png')} alt="" />
               <div className="logo-text">
                 <p>Code by Vivek Kumar</p>
               </div>

@@ -52,60 +52,6 @@
   cursor: pointer;
 }
 
-.blinkBlock {
-  width: 0.2em;
-  height: 0.15em;
-  background: #dee0e1;
-  display: flex;
-  align-items: center;
-  padding-left: 4px;
-  padding-bottom: 5px;
-  margin-right: 6px;
-  font-family: 'Righteous', cursive;
-  border-radius: 2px;
-}
-
-.blinkBlock h6 {
-  font-size: 28px;
-  font-weight: 400;
-  color: #282828;
-}
-
-.blinkit {
-  margin-top: 10px;
-  padding-left: 0px;
-  opacity: 100%;
-  animation: blink-animation 0.2s forwards;
-}
-
-@keyframes blink-animation {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes blink-animations {
-  0% {
-    opacity: 0%;
-  }
-  49% {
-    opacity: 50%;
-  }
-  60% {
-    opacity: 100%;
-  }
-
-  99% {
-    opacity: 100%;
-  }
-}
-
 .nav-item > .point:hover {
   transform: translate(0%, 10%);
 }
@@ -120,6 +66,21 @@
   width: 125px;
   white-space: nowrap;
   overflow: hidden;
+}
+
+.logo > .nav-link > img {
+  width: 23px;
+  height: 23px;
+  margin-right: 7px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid rgba(128, 128, 128, 0.158);
+  background: linear-gradient(
+    90deg,
+    rgb(237, 239, 240) 0%,
+    rgb(196, 224, 232) 35%,
+    rgba(232, 232, 232, 1) 100%
+  );
 }
 
 .logo > .nav-link > .logo-text > p:hover {
@@ -300,16 +261,6 @@ a {
   }
   .nav-item {
     display: none;
-  }
-
-  .blinkBlock {
-    width: 0.7em;
-    height: 0.55em;
-  }
-
-  .blinkBlock h6 {
-    font-size: 20px;
-    color: #3f3f3f;
   }
 }
 
