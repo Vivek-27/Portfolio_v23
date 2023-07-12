@@ -4,25 +4,11 @@ import { motion } from 'framer-motion';
 import portrate from '../images/portrate.png';
 import './home.css';
 import { Parallax, Background } from 'react-parallax';
-import { Link } from 'react-router-dom';
 
 const Home = () => {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const text = ['Developer', 'FullStack', 'Power'];
   const currTime = new Date().toTimeString();
-
-  const [menu, setMenu] = useState(false);
-  const [menu2, setMenu2] = useState(false);
-  const [anim, setAnim] = useState('ease-in-right');
-
-  useEffect(() => {
-    if (window.scrollY > 50) {
-      console.log(window.scrollY);
-      setMenu2(true);
-    } else if (window.scrollY < 50) {
-      setMenu2(false);
-    }
-  }, [window.scrollY]);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -36,76 +22,6 @@ const Home = () => {
 
   return (
     <div id="home" className="home">
-      {menu ? (
-        <>
-          <div className="menu" style={{ animation: `${anim} 0.6s linear` }}>
-            <div
-              className="menu-close"
-              onClick={() => {
-                setAnim('ease-out-right');
-                setTimeout(() => {
-                  setMenu((prev) => !prev);
-                  setAnim('ease-in-right');
-                }, 500);
-              }}
-            >
-              ※
-            </div>
-            <div className="navigation-text">Navigation</div>
-            <div className="nav-item-menu">
-              <Link
-                onClick={() => setMenu((prev) => !prev)}
-                className="nav-link"
-                to="/"
-              >
-                Home
-              </Link>
-              <Link
-                onClick={() => setMenu((prev) => !prev)}
-                className="nav-link"
-                to="/work"
-              >
-                Work
-              </Link>
-              <Link
-                onClick={() => setMenu((prev) => !prev)}
-                className="nav-link"
-                to="/about"
-              >
-                About
-              </Link>
-              <Link
-                onClick={() => setMenu((prev) => !prev)}
-                className="nav-link"
-                to="/contact"
-              >
-                Contact
-              </Link>
-            </div>
-          </div>
-        </>
-      ) : (
-        ''
-      )}
-      {menu2 ? (
-        <>
-          <div
-            className="menu2"
-            onClick={() => {
-              setAnim('ease-out-right');
-              setTimeout(() => {
-                setMenu((prev) => !prev);
-                setAnim('ease-in-right');
-              }, 500);
-            }}
-          >
-            <div className={menu ? `line line1` : `line`}></div>
-            <div className={menu ? `line line2` : `line`}></div>
-          </div>
-        </>
-      ) : (
-        ''
-      )}
       <div id="page">
         <Parallax strength={200}>
           <Background className="background">

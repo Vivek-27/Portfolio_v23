@@ -8,6 +8,7 @@ import './App.css';
 import Contact from './components/Contact';
 import { useEffect, useState } from 'react';
 import { ParallaxProvider } from 'react-scroll-parallax';
+import MenuBtn from './components/MenuBtn';
 
 function App() {
   const location = useLocation();
@@ -70,6 +71,7 @@ function App() {
       )} */}
       <div className="App">
         <NavBar />
+        <MenuBtn />
         <ParallaxProvider>
           <AnimatePresence mode="wait">
             <Routes key={location.pathname} location={location}>

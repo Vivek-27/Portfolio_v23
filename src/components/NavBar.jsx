@@ -83,6 +83,15 @@ const NavBar = () => {
                 Contact
               </Link>
             </div>
+            <div className="socials">
+              <p>SOCIALS</p>
+              <ul>
+                <a>Awwwwards</a>
+                <a>Instagram</a>
+                <a>GitHub</a>
+                <a>LinkedIn</a>
+              </ul>
+            </div>
           </div>
         </>
       ) : (

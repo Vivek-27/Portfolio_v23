@@ -36,7 +36,7 @@
 }
 
 .hero > .left > h1 {
-  color: #d4d4d4;
+  color: #373737;
   position: absolute;
   bottom: 5%;
   font-weight: 400;
@@ -49,7 +49,8 @@
 }
 
 .hero > .left > h4 {
-  font-weight: 300;
+  font-weight: 400;
+  color: #cf4646;
   font-size: 7vw;
   animation: ease-in-bottom 0.5s linear !important;
 }
@@ -180,18 +181,19 @@
   position: fixed;
   top: 4%;
   right: 2%;
-  width: 110px;
-  height: 110px;
+  width: 90px;
+  height: 90px;
   z-index: 2000;
   border-radius: 50%;
-  background-color: #202020;
+  background-color: #1c1d20;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   border: 1px solid rgba(128, 128, 128, 0.389);
-  gap: 5px;
+  gap: 5.6px;
   cursor: pointer;
+  scale: 1;
   animation: menu2-appear 0.2s linear;
 }
 
@@ -206,17 +208,17 @@
 
 @media (max-width: 900px) {
   .menu2 {
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
   }
 
   .menu2 > .line {
-    width: 25px !important;
+    width: 20px !important;
   }
 }
 
 .menu2 > .line {
-  width: 40px;
+  width: 30px;
   height: 2px;
   border-radius: 20px;
   background-color: #8a8a8a;
@@ -254,6 +256,16 @@
   scale: 1;
 }
 
+@media (max-width: 900px) {
+  .menu2:hover {
+    scale: 1;
+  }
+
+  .menu2:active {
+    scale: 1.1;
+  }
+}
+
 #page3 {
   width: 100%;
   height: 100vh;
@@ -270,18 +282,18 @@
   top: 10%;
   height: 42vh;
   width: 70%;
-  border-bottom: 1px solid rgb(128, 128, 128);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.418);
 }
 
 #page3 > .top > h2 {
-  font-size: 0.7em;
-  font-weight: 500;
+  font-size: 100px;
+  font-weight: 400;
   color: #f5f5f5;
 }
 
 #page3 > .top > h2 > .passport-img {
-  width: 0.7em;
-  height: 0.7;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   object-fit: cover;
   margin-right: 20px;
@@ -296,13 +308,13 @@
 }
 
 #page3 > .mid > button {
-  font-size: 30px;
+  font-size: 20px;
   background-color: transparent;
   color: #ffffff;
   padding: 32px 50px;
   margin-left: 10px;
   border-radius: 50px;
-  border: 2px solid rgba(128, 128, 128, 0.836);
+  border: 1px solid rgba(128, 128, 128, 0.429);
   cursor: pointer;
 }
 
@@ -335,7 +347,7 @@
 
 #page3 > .end > .left > .ver > span {
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 500;
   color: #ffffff;
 }
 
@@ -359,7 +371,7 @@
 }
 #page3 > .end > .right > ul > a {
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 500;
   color: #ffffff;
 }
 
