@@ -4,7 +4,7 @@ import Home from './components/Home';
 import Work from './components/Work';
 import About from './components/About';
 import { AnimatePresence } from 'framer-motion';
-import './app.css';
+import './App.css';
 import Contact from './components/Contact';
 import { useEffect, useState } from 'react';
 import { ParallaxProvider } from 'react-scroll-parallax';
