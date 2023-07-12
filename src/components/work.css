@@ -1,0 +1,115 @@
+#home {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#home > .mid-text {
+  width: 69%;
+  padding-top: 0.58em;
+}
+
+#home > .mid-text > h2 {
+  font-size: 0.68em;
+  font-weight: 400;
+  animation: ease-in-bottom 0.5s linear;
+}
+
+@keyframes ease-in-bottom {
+  from {
+    transform: translate(0%, 50%);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#home > .mid-menu {
+  width: 70%;
+  height: 0.8em;
+  margin: 0.2em 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#home > .mid-menu > .left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+#home > .mid-menu > .left > button {
+  padding: 1.6em 2.7em;
+  font-size: 0.12em;
+  font-weight: 100;
+  border-radius: 100px;
+  background-color: transparent;
+  border: 1px solid rgba(128, 128, 128, 0.467);
+  cursor: pointer;
+  animation: ease-in-bottom 0.5s linear;
+}
+
+#home > .mid-menu > .left > button:hover {
+  scale: 1.1;
+}
+
+#home > .mid-menu > .left > button:active {
+  scale: 1.05;
+}
+
+#home > .mid-menu > .right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  animation: ease-in-bottom 0.5s linear;
+}
+
+#home > .mid-menu > .right > .circle {
+  width: 0.57em;
+  height: 0.57em;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid rgba(128, 128, 128, 0.467);
+  cursor: pointer;
+}
+
+#home > .mid-menu > .right > .list-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+#home > .mid-menu > .right > .circle:hover {
+  scale: 1.2;
+}
+
+#home > .mid-menu > .right > .circle:active {
+  scale: 1.1;
+}
+
+#home > .mid-menu > .right > .list-view > .line {
+  width: 0.15em;
+  height: 2px;
+  border-radius: 20px;
+  background-color: rgb(0, 0, 0);
+}
+
+#home > .mid-menu > .right > .grid-view {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  padding: 0.18em;
+  background-color: black;
+}
+
+#home > .mid-menu > .right > .grid-view > .box {
+  width: 0.07em;
+  height: 0.07em;
+  border: 1px solid rgb(204, 204, 204);
+}
