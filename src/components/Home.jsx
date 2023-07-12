@@ -16,10 +16,10 @@ const Home = () => {
   const [anim, setAnim] = useState('ease-in-right');
 
   useEffect(() => {
-    if (window.scrollY > 500) {
+    if (window.scrollY > 50) {
       console.log(window.scrollY);
       setMenu2(true);
-    } else if (window.scrollY < 500) {
+    } else if (window.scrollY < 50) {
       setMenu2(false);
     }
   }, [window.scrollY]);
