@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './navbar.css';
+import hamburger from '../images/hamburger-menu-svgrepo-com.svg';
 
 const NavBar = () => {
   const [menu, setMenu] = useState(false);
@@ -29,16 +30,6 @@ const NavBar = () => {
     }
   }, [location]);
 
-  const Blink = () => {
-    return (
-      <div className="blinkBlock">
-        <h6>{'>'}</h6>
-        <div className="blinkit">
-          <h6>{'-'}</h6>
-        </div>
-      </div>
-    );
-  };
   return (
     <>
       {menu ? (
@@ -111,7 +102,7 @@ const NavBar = () => {
               </div>
             </Link>
             <div onClick={() => setMenu((prev) => !prev)} className="nav-menu">
-              • Menu
+              <img className="hamburger" src={hamburger} alt="" />
             </div>
           </div>
           <div className="nav-link">

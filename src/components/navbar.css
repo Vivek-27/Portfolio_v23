@@ -246,10 +246,11 @@ a {
 
   .nav-menu {
     display: flex;
-    color: #1e1e1e;
-    font-size: 1.1em;
-    font-weight: 300;
     cursor: pointer;
+  }
+
+  .nav-menu > img {
+    width: 25px;
   }
 
   .logo {
