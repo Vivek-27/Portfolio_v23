@@ -151,7 +151,6 @@
 #home > .projects > .item {
   height: 35vw;
   border-top: 1px solid rgba(186, 186, 186, 0.455);
-  border-bottom: 1px solid rgba(186, 186, 186, 0.455);
 }
 
 #home > .projects > .project1 {
@@ -289,7 +288,6 @@
   object-fit: contain;
   backdrop-filter: blur(40px);
   opacity: 0.7;
-  /* mix-blend-mode: multiply; */
 }
 
 @media (max-width: 900px) {
@@ -356,5 +354,15 @@
   }
   #home > .projects > .project1 > .left > .img-p3 {
     height: 68vw;
+  }
+
+  #home > .projects > .project1 > .left > .card {
+    height: 200px;
+    width: 75%;
+    background-color: rgb(56, 232, 232);
+  }
+  #home > .projects > .project1 > .project2 {
+    height: 70vh;
+    width: 100%;
   }
 }
