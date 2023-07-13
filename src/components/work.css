@@ -369,6 +369,7 @@
   }
   #home > .projects > .project1 > .left > .card1 {
     transform: translateY(10%);
+    left: 20%;
     background: linear-gradient(
       90deg,
       rgba(225, 113, 245, 0.388) 0%,
@@ -389,6 +390,7 @@
   }
   #home > .projects > .project1 > .left > .card3 {
     transform: translateY(-10%);
+    right: 20%;
     background: linear-gradient(
       90deg,
       rgba(251, 243, 196, 1) 0%,
