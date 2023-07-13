@@ -116,8 +116,14 @@
     margin-top: 60px;
   }
 
+  .hero > .right {
+    right: 0;
+    bottom: 13%;
+  }
+
   .hero > .right > p {
     color: #ffffff;
+    font-size: 12px;
   }
 
   .hero > .left > h4 {
