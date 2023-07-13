@@ -3,7 +3,7 @@
   position: static;
   z-index: 1000;
   padding: 30px 60px;
-  animation: ease-in-bottom 1.5s forwards;
+  animation: ease-in-bottom 0.5s forwards;
 }
 
 .nav-about {

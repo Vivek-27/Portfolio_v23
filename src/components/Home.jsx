@@ -4,7 +4,9 @@ import { motion } from 'framer-motion';
 import portrate from '../images/portrate.png';
 import './home.css';
 import { Parallax, Background } from 'react-parallax';
-
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/all';
+import Work from './Work';
 const Home = () => {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const text = ['Developer', 'FullStack', 'Power'];
@@ -19,16 +21,113 @@ const Home = () => {
       }
     }, 5000);
   }, [currentTextIndex, text.length]);
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    // REVEAL //
+    gsap.utils.toArray('#page2>h4').forEach(function (elem) {
+      ScrollTrigger.create({
+        trigger: elem,
+        start: 'top 85%',
+        end: 'bottom 20%',
+        onEnter: function () {
+          gsap.fromTo(
+            elem,
+            { y: 70, autoAlpha: 0 },
+            {
+              duration: 1,
+              y: 0,
+              autoAlpha: 1,
+              overwrite: 'auto'
+            }
+          );
+        },
+        onLeave: function () {
+          gsap.fromTo(
+            elem,
+            { autoAlpha: 1 },
+            { autoAlpha: 0, overwrite: 'auto' }
+          );
+        },
+        onEnterBack: function () {
+          gsap.fromTo(
+            elem,
+            { y: -70, autoAlpha: 0 },
+            {
+              duration: 1,
+              y: 0,
+              autoAlpha: 1,
+              overwrite: 'auto'
+            }
+          );
+        },
+        onLeaveBack: function () {
+          gsap.fromTo(
+            elem,
+            { autoAlpha: 1 },
+            { autoAlpha: 0, overwrite: 'auto' }
+          );
+        }
+      });
+    });
+
+    gsap.utils.toArray('#page2>p').forEach(function (elem) {
+      ScrollTrigger.create({
+        trigger: elem,
+        start: 'top 80%',
+        end: 'bottom 20%',
+        onEnter: function () {
+          gsap.fromTo(
+            elem,
+            { y: 70, opacity: 0, autoAlpha: 0 },
+            {
+              duration: 1,
+              y: 0,
+              opacity: 1,
+              autoAlpha: 1,
+              overwrite: 'auto'
+            }
+          );
+        },
+        onLeave: function () {
+          gsap.fromTo(
+            elem,
+            { autoAlpha: 1 },
+            { autoAlpha: 0, overwrite: 'auto' }
+          );
+        },
+        onEnterBack: function () {
+          gsap.fromTo(
+            elem,
+            { y: -70, autoAlpha: 0 },
+            {
+              duration: 1,
+              y: 0,
+              autoAlpha: 1,
+              ease: 'back',
+              overwrite: 'auto'
+            }
+          );
+        },
+        onLeaveBack: function () {
+          gsap.fromTo(
+            elem,
+            { autoAlpha: 1 },
+            { autoAlpha: 0, overwrite: 'auto' }
+          );
+        }
+      });
+    });
+  }, []);
 
   return (
     <div id="home" className="home">
       <div id="page">
-        <Parallax strength={200}>
+        <Parallax id="parallax" strength={200}>
           <Background className="background">
             <img className="animated-image" src={portrate} alt="" />
           </Background>
           <div className="hero">
-            <div className="left">
+            <div id="left" className="left">
               <p>{text[currentTextIndex]}</p>
               <h4>
                 Open to <br />
@@ -58,6 +157,15 @@ const Home = () => {
           Experience in JAVA, HTML, CSS, JavaScript, Linux, Windows, React JS,
           Node JS, Express JS, MongoDB, Adobe Photoshop, etc...
         </p>
+      </div>
+
+      <div id="page-work">
+        <div className="top">
+          <p>RECENT WORK</p>
+        </div>
+        <div className="projects">
+          <Work />
+        </div>
       </div>
 
       <div id="page3">
@@ -117,6 +225,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+
       <div className="motionDiv">
         <motion.div
           className="slide-in"

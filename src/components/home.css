@@ -22,9 +22,9 @@
   font-size: 2.3vw;
   right: 5.5%;
   top: 25%;
-  color: #fff;
+  color: #a7a7a7;
   line-height: 4vw;
-  animation: ease-in-bottom 1s forwards;
+  animation: ease-in-bottom 0.5s forwards;
 }
 
 .hero > .left {
@@ -36,7 +36,7 @@
 }
 
 .hero > .left > h1 {
-  color: #373737;
+  color: #292929;
   position: absolute;
   bottom: 5%;
   font-weight: 400;
@@ -60,8 +60,9 @@
   height: auto;
   left: 55%;
   opacity: 1;
-  background-color: #e5e5e5;
-  animation: ease-in-bottom 1s forwards;
+  background-color: #ffffff;
+  backdrop-filter: blur(25px);
+  animation: ease-in-bottom 1s linear;
 }
 
 @keyframes ease-in-bottom {
@@ -105,34 +106,36 @@
 
   .hero > .left > p {
     font-size: 8vw;
-    animation: ease-in-bottom 1s forwards;
+    /* animation: ease-in-bottom 1s forwards; */
   }
 }
 #home > #page2 {
-  height: 50vh;
-  background-color: #f6f6f6;
+  height: 70vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
   gap: 100px;
   padding: 0% 15%;
-  line-height: 50px;
+  border-top: 1px solid rgba(173, 173, 173, 0.268);
 }
 
 #home > #page2 > h4 {
-  width: 70%;
-  font-weight: 200;
-  color: #6e6e6e;
-  text-align: justify;
-  font-size: 2vw;
-  line-height: 50px;
+  width: 100%;
+  height: 70%;
+  padding: 0 1vw;
+  font-weight: 400;
+  color: #1c1c1c;
+  font-size: 1.8vw;
+  line-height: 1.5;
 }
 #page2 > p {
-  width: 30%;
-  text-align: justify;
-  font-weight: 200;
-  font-size: 1.5vw;
-  color: #282828e4;
+  width: 40%;
+  height: 70%;
+  padding: 0 1vw;
+  font-weight: 500;
+  font-size: 1.1vw;
+  line-height: 1.6;
+  color: #3d3d3de4;
 }
 
 @media (max-width: 900px) {
@@ -464,4 +467,28 @@
     font-size: 12px;
     font-weight: 400;
   }
+}
+
+#page-work {
+  width: 100%;
+  height: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#page-work > .top {
+  height: 7vw;
+  width: 83%;
+  border-bottom: 2px solid rgba(175, 175, 175, 0.459);
+  display: flex;
+  align-items: end;
+}
+
+#page-work > .top > p {
+  font-size: 13px;
+  padding: 3vw;
+  font-weight: 400;
+  padding-left: 10vw;
+  color: #7f7f7f;
 }
