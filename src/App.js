@@ -49,7 +49,7 @@ function App() {
 
   return (
     <>
-      {/* {loading ? (
+      {loading ? (
         <>
           <div id="loading">
             {' '}
@@ -68,7 +68,7 @@ function App() {
             </Routes>
           </AnimatePresence>
         </div>
-      )} */}
+      )}
       <div className="App">
         <NavBar />
         <MenuBtn />
