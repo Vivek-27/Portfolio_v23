@@ -238,6 +238,7 @@ a {
 @media (max-width: 900px) {
   .navigation {
     padding: 15px 15px;
+    position: absolute;
   }
   .nav {
     display: flex;

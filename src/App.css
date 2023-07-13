@@ -12,6 +12,7 @@ body {
   font-family: 'Inter', sans-serif;
   background-color: rgb(255, 253, 253);
   color: #ffffff;
+  overflow-x: hidden;
 }
 div {
   color: #808080;
