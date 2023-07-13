@@ -150,7 +150,6 @@
 }
 #home > .projects > .item {
   height: 35vw;
-  overflow: hidden;
   border-top: 1px solid rgba(186, 186, 186, 0.455);
   border-bottom: 1px solid rgba(186, 186, 186, 0.455);
 }
@@ -175,16 +174,36 @@
   font-size: 3.6vw;
 }
 
-#home > .projects > .project1 > .left-text > span {
+#home > .projects > .project1 > .left-text > .end {
+  display: flex;
+  justify-content: space-between;
+}
+#home > .projects > .project1 > .left-text > .end > .links {
+  display: flex;
+  align-items: end;
+  padding-right: 20px;
+  gap: 30px;
+}
+#home > .projects > .project1 > .left-text > .end > .links > a {
+  color: rgb(103, 103, 103);
+}
+#home > .projects > .project1 > .left-text > .end > span {
   font-size: 1vw;
 }
+#home > .projects > .project1 > .left-text > .end > span > p {
+  font-size: 1.2vw;
+  padding-bottom: 10px;
+  font-weight: 500;
+  color: rgb(103, 103, 103);
+}
 
-#home > .projects > .project1 > .left-text > span > ul {
+#home > .projects > .project1 > .left-text > .end > span > ul {
   list-style: none;
 }
 
 #home > .projects > .project1 > .left-text > p {
   font-size: 1.8vw;
+  color: rgb(68, 68, 68);
 }
 
 #home > .projects > .project1 > .left {
@@ -210,4 +229,65 @@
   position: absolute;
   height: 28vw;
   z-index: 8;
+}
+
+#home > .projects > .project1 > .left > .card {
+  height: 36vh;
+  width: 387px;
+  position: absolute;
+  border-radius: 4px;
+  overflow: hidden;
+}
+#home > .projects > .project1 > .left > .card1 {
+  transform: translateY(20%);
+  z-index: 5;
+  background: linear-gradient(
+    90deg,
+    rgba(225, 113, 245, 0.388) 0%,
+    rgba(234, 108, 108, 0.612) 35%,
+    rgb(241, 241, 213) 54%,
+    rgba(159, 221, 244, 0.652) 100%
+  );
+}
+
+#home > .projects > .project1 > .left > .card2 {
+  z-index: 6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    90deg,
+    rgba(225, 113, 245, 0.388) 0%,
+    rgba(234, 108, 108, 0.612) 35%,
+    rgb(241, 241, 213) 54%,
+    rgba(159, 221, 244, 0.652) 100%
+  );
+}
+#home > .projects > .project1 > .left > .card3 {
+  z-index: 4;
+  transform: translateY(-20%);
+  background: linear-gradient(
+    90deg,
+    rgba(251, 243, 196, 1) 0%,
+    rgba(235, 188, 208, 1) 35%,
+    rgba(239, 241, 213, 1) 73%,
+    rgba(244, 190, 110, 0.51) 100%
+  );
+}
+#home > .projects > .project1 > .project2 {
+  position: relative;
+  height: 60vh;
+  width: 55vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#home > .projects > .project1 > .left > .card2 > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  backdrop-filter: blur(40px);
+  opacity: 0.7;
+  /* mix-blend-mode: multiply; */
 }

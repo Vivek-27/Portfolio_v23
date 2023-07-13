@@ -168,6 +168,142 @@ const Work = () => {
         }
       });
     });
+
+    gsap.utils.toArray('.project1>.project2>.card3').forEach(function (elem) {
+      ScrollTrigger.create({
+        trigger: elem,
+        start: 'top 85%',
+        end: 'bottom 20%',
+        onEnter: function () {
+          gsap.fromTo(
+            elem,
+            { x: -10, autoAlpha: 0 },
+            {
+              duration: 2,
+              x: 50,
+              autoAlpha: 1,
+              overwrite: 'auto'
+            }
+          );
+        },
+        onLeave: function () {
+          gsap.fromTo(
+            elem,
+            { autoAlpha: 1 },
+            { autoAlpha: 0, overwrite: 'auto' }
+          );
+        },
+        onEnterBack: function () {
+          gsap.fromTo(
+            elem,
+            { x: -10, autoAlpha: 0 },
+            {
+              duration: 2,
+              x: 50,
+              autoAlpha: 1,
+              overwrite: 'auto'
+            }
+          );
+        },
+        onLeaveBack: function () {
+          gsap.fromTo(
+            elem,
+            { autoAlpha: 1 },
+            { autoAlpha: 0, overwrite: 'auto' }
+          );
+        }
+      });
+    });
+    gsap.utils.toArray('.project1>.project2>.card1').forEach(function (elem) {
+      ScrollTrigger.create({
+        trigger: elem,
+        start: 'top 85%',
+        end: 'bottom 20%',
+        onEnter: function () {
+          gsap.fromTo(
+            elem,
+            { x: 10, autoAlpha: 0 },
+            {
+              duration: 2,
+              x: -50,
+              autoAlpha: 1,
+              overwrite: 'auto'
+            }
+          );
+        },
+        onLeave: function () {
+          gsap.fromTo(
+            elem,
+            { autoAlpha: 1 },
+            { autoAlpha: 0, overwrite: 'auto' }
+          );
+        },
+        onEnterBack: function () {
+          gsap.fromTo(
+            elem,
+            { x: 10, autoAlpha: 0 },
+            {
+              duration: 2,
+              x: -50,
+              autoAlpha: 1,
+              overwrite: 'auto'
+            }
+          );
+        },
+        onLeaveBack: function () {
+          gsap.fromTo(
+            elem,
+            { autoAlpha: 1 },
+            { autoAlpha: 0, overwrite: 'auto' }
+          );
+        }
+      });
+    });
+    gsap.utils.toArray('.project1>.project2>.card2').forEach(function (elem) {
+      ScrollTrigger.create({
+        trigger: elem,
+        start: 'top 85%',
+        end: 'bottom 20%',
+        onEnter: function () {
+          gsap.fromTo(
+            elem,
+            { scale: 0.9, autoAlpha: 0 },
+            {
+              duration: 0.5,
+              scale: 1,
+              autoAlpha: 1,
+              overwrite: 'auto'
+            }
+          );
+        },
+        onLeave: function () {
+          gsap.fromTo(
+            elem,
+            { autoAlpha: 1 },
+            { autoAlpha: 0, overwrite: 'auto' }
+          );
+        },
+        onEnterBack: function () {
+          gsap.fromTo(
+            elem,
+            { scale: 0.9, autoAlpha: 0 },
+            {
+              duration: 0.5,
+              scale: 1,
+              autoAlpha: 1,
+              overwrite: 'auto'
+            }
+          );
+        },
+        onLeaveBack: function () {
+          gsap.fromTo(
+            elem,
+            { autoAlpha: 1 },
+            { autoAlpha: 0, overwrite: 'auto' }
+          );
+        }
+      });
+    });
   }, []);
 
   return (
@@ -212,16 +348,33 @@ const Work = () => {
                 front-end) and Node Js (as back-end), which includes creating a
                 posting page where users can scroll and see the posted images.
               </p>
-              <span>
-                Key Features —{' '}
-                <ul>
-                  <li>Sign Up and Login</li>
-                  <li>Post Images</li>
-                  <li>Like post</li>
-                  <li>Comment on post</li>
-                  <li>Edit Profile</li>
-                </ul>
-              </span>
+              <div className="end">
+                <span>
+                  <p>Key Features —</p>
+                  <ul>
+                    <li>Sign Up and Login</li>
+                    <li>Post Images</li>
+                    <li>Like post</li>
+                    <li>Comment on post</li>
+                    <li>Edit Profile</li>
+                  </ul>
+                </span>
+                <div className="links">
+                  <a
+                    style={{ color: 'orange' }}
+                    href="https://instagram-clone-v.netlify.app/"
+                    target="_blank"
+                  >
+                    Visit
+                  </a>
+                  <a
+                    href="https://github.com/Vivek-27/SocialMediaApp"
+                    target="_blank"
+                  >
+                    View Code
+                  </a>
+                </div>
+              </div>
             </div>
             <div className="left">
               <img
@@ -240,6 +393,50 @@ const Work = () => {
                 src={require('../images/project_instagram.png')}
                 alt=""
               />
+            </div>
+          </div>
+          <div className="project1 item">
+            <div className="left project2">
+              <div className="card1 card"></div>
+              <div className="card2 card">
+                <img src={require('../images/project_fileShare.png')} alt="" />
+              </div>
+              <div className="card3 card"></div>
+            </div>
+
+            <div className="left-text">
+              <h5>File Share Online</h5>
+              <p>
+                This File sharing site provide services to access digital media
+                like photos, videos, documents, etc., from anywhere to its
+                users. These apps will help you to transfer large files easily.
+                It provide advanced link which you can share to person you want
+                to access that file.
+              </p>
+              <div className="end">
+                <span>
+                  <p>Features —</p>
+                  <ul>
+                    <li>Easy File Share online</li>
+                    <li>Provides file sharable link.</li>
+                  </ul>
+                </span>
+                <div className="links">
+                  <a
+                    style={{ color: 'orange' }}
+                    href="https://filesharingonline.netlify.app/"
+                    target="_blank"
+                  >
+                    Visit
+                  </a>
+                  <a
+                    href="https://github.com/Vivek-27/FileSharingOnline"
+                    target="_blank"
+                  >
+                    View Code
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>

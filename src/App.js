@@ -29,7 +29,9 @@ function App() {
     ' • नमस्ते',
     ' • Olá',
     ' • Hallo',
-    ' • Χαίρετε'
+    ' • Χαίρετε',
+    '',
+    ''
   ];
 
   useEffect(() => {
@@ -69,7 +71,7 @@ function App() {
           </AnimatePresence>
         </div>
       )}
-      <div className="App">
+      {/* <div className="App">
         <NavBar />
         <MenuBtn />
         <ParallaxProvider>
@@ -82,7 +84,7 @@ function App() {
             </Routes>
           </AnimatePresence>
         </ParallaxProvider>
-      </div>
+      </div> */}
     </>
   );
 }
