@@ -7,6 +7,7 @@ import { Parallax, Background } from 'react-parallax';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 import Work from './Work';
+import { Link } from 'react-router-dom';
 const Home = () => {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const text = ['Developer', 'FullStack', 'Power'];
@@ -129,18 +130,13 @@ const Home = () => {
           <div className="hero">
             <div id="left" className="left">
               <p>{text[currentTextIndex]}</p>
-              <h4>
-                Open to <br />
-                Work.
-              </h4>
-
-              <h1>Vivek</h1>
+              <h4>Hi! I'm Vivek !</h4>
+              <Link to="/contact">
+                <button>Contact Me</button>
+              </Link>
             </div>
             <div className="right">
-              <p>
-                FullStack Web <br />
-                Developer
-              </p>
+              <p>Scroll Down</p>
             </div>
           </div>
         </Parallax>
@@ -148,8 +144,8 @@ const Home = () => {
 
       <div id="page2">
         <h4>
-          Hi, I'm Vivek! I'm a Computer Science Engineering Student, experience
-          in coding programs and web development. <br /> In-depth knowledge of
+          I'm a Computer Science Engineering Student, experience in coding
+          programs and web development. <br /> In-depth knowledge of
           <span> OOPs concept and JAVA Programming. </span> Working experience
           in web development and deployment in JavaScript environment.
         </h4>

@@ -6,51 +6,56 @@
 .hero {
   height: 100vh;
   width: 98vw;
+  padding: 3vw;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .hero > .right {
-  width: 50%;
-  height: 100%;
+  width: 20px;
+  position: absolute;
+  right: 1%;
+  bottom: 20%;
+  animation: ease-in-bottom 0.5s linear !important;
 }
 
 .hero > .right > p {
-  position: absolute;
-  font-size: 2.3vw;
-  right: 5.5%;
-  top: 25%;
-  color: #a7a7a7;
-  line-height: 4vw;
-  animation: ease-in-bottom 0.5s forwards;
+  font-size: 16px;
+  font-weight: 200;
+  white-space: nowrap;
+  letter-spacing: 10px;
+  transform: rotate(-90deg);
 }
 
 .hero > .left {
   height: 100%;
-  width: 50%;
+  width: 80%;
   overflow: hidden;
   padding-left: 2vw;
-  padding-top: 3vw;
-}
-
-.hero > .left > h1 {
-  color: #292929;
-  position: absolute;
-  bottom: 5%;
-  font-weight: 400;
-  animation: ease-in-bottom 1s forwards;
 }
 
 .hero > .left > p {
   font-size: 2vw;
   animation: ease-in-bottom 1s forwards;
+  padding-bottom: 4vw;
 }
 
 .hero > .left > h4 {
-  font-weight: 400;
-  color: #cf4646;
+  font-weight: 500;
+  color: #1b1b1b;
   font-size: 7vw;
+  animation: ease-in-bottom 0.5s linear !important;
+}
+
+.hero > .left > a > button {
+  width: 16vw;
+  height: 4vw;
+  background: transparent;
+  border-radius: 50px;
+  font-size: 1vw;
+  cursor: pointer;
+  color: #747373;
+  border: 1px solid rgba(128, 128, 128, 0.7);
   animation: ease-in-bottom 0.5s linear !important;
 }
 .animated-image {
@@ -89,21 +94,38 @@
   }
 
   .hero > .right > p {
-    display: none;
-  }
-  .hero > .left > h1 {
-    font-size: 25vw;
-    color: #fff;
-    bottom: 1%;
+    color: #ffffff;
   }
 
   .hero > .left > h4 {
-    margin-top: 10px;
+    margin-top: 70%;
+    font-size: 45px;
+    color: #fff;
+    mix-blend-mode: hard-light;
+  }
+
+  .hero > .left {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  .hero > .left > a > button {
+    width: 200px;
+    height: 50px;
+    font-size: 15px;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    margin-bottom: 30px;
   }
 
   .hero > .left > p {
     font-size: 8vw;
-    /* animation: ease-in-bottom 1s forwards; */
+    color: #fff;
+    text-shadow: 1px 1px 4px rgba(182, 182, 182, 0.547);
   }
 }
 #home > #page2 {
