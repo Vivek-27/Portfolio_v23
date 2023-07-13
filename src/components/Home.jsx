@@ -138,6 +138,7 @@ const Home = () => {
             <div className="right">
               <p>Scroll Down</p>
             </div>
+            <div className="page-bottom"></div>
           </div>
         </Parallax>
       </div>
