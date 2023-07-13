@@ -122,7 +122,7 @@
     margin-top: 70%;
     font-size: 45px;
     color: #fff;
-    mix-blend-mode: hard-light;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.351);
   }
 
   .hero > .left {
@@ -181,25 +181,25 @@
 
 @media (max-width: 900px) {
   #home > #page2 {
-    height: 60vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     gap: 0px;
     padding: 0% 5%;
-    padding-top: 10%;
+    padding-top: 0%;
     line-height: 30px;
   }
 
   #home > #page2 > h4 {
-    width: 95%;
+    width: 90%;
     text-align: justify;
-    font-size: 18px;
-    line-height: 32px;
+    font-size: 16px;
+    line-height: 28px;
   }
 
   #page2 > p {
-    width: 90%;
-    text-align: justify;
+    width: 85%;
+    text-align: center;
     font-size: 14px;
     padding: 7% 0;
   }
