@@ -61,14 +61,17 @@ function App() {
       ) : (
         <div className="App">
           <NavBar />
-          <AnimatePresence mode="wait">
-            <Routes key={location.pathname} location={location}>
-              <Route index element={<Home />} />
-              <Route path="/work" element={<Work />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/contact" element={<Contact />} />
-            </Routes>
-          </AnimatePresence>
+          <MenuBtn />
+          <ParallaxProvider>
+            <AnimatePresence mode="wait">
+              <Routes key={location.pathname} location={location}>
+                <Route index element={<Home />} />
+                <Route path="/work" element={<Work />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/contact" element={<Contact />} />
+              </Routes>
+            </AnimatePresence>
+          </ParallaxProvider>
         </div>
       )}
       {/* <div className="App">
