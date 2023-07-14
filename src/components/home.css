@@ -37,12 +37,15 @@
   width: 80%;
   overflow: hidden;
   padding-left: 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .hero > .left > p {
   font-size: 2vw;
   animation: ease-in-bottom 1s forwards;
-  padding-bottom: 4vw;
+  padding-bottom: 1vw;
 }
 
 .hero > .left > h4 {
@@ -59,13 +62,14 @@
   border-radius: 50px;
   font-size: 1vw;
   cursor: pointer;
+  margin-bottom: 8%;
   color: #747373;
   border: 1px solid rgba(128, 128, 128, 0.7);
   animation: ease-in-bottom 0.5s linear !important;
 }
 .animated-image {
   position: relative;
-  width: 700px;
+  width: 80%;
   height: auto;
   left: 55%;
   opacity: 1;

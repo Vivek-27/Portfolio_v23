@@ -342,7 +342,7 @@ const Work = () => {
         <div className="projects">
           <div className="project1 item">
             <div className="left-text">
-              <h5>Instagram Clone</h5>
+              <h5>Instagram Clone </h5>
               <p>
                 In this project, I have build Instagram Clone using React Js (as
                 front-end) and Node Js (as back-end), which includes creating a
@@ -437,6 +437,48 @@ const Work = () => {
                   </a>
                 </div>
               </div>
+            </div>
+          </div>
+
+          <div className="project1 item">
+            <div className="left-text">
+              <h5>Parallax Landing Page ⭐</h5>
+              <p>
+                This is complete Vanilla JavaScript project. I have used GSAP to
+                animate the parallax effect.
+              </p>
+              <div className="end">
+                <span>
+                  <p>Features —</p>
+                  <ul>
+                    <li>Simple Design</li>
+                    <li>Parallax effect.</li>
+                  </ul>
+                </span>
+                <div className="links">
+                  <a
+                    style={{ color: 'orange' }}
+                    href="https://parallax-landing-page23.netlify.app/"
+                    target="_blank"
+                  >
+                    Visit
+                  </a>
+                  <a
+                    href="https://github.com/Vivek-27/Parallax-Landing-Page"
+                    target="_blank"
+                  >
+                    View Code
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="left">
+              <img
+                style={{ scale: '.8' }}
+                className="img-p3"
+                src={require('../images/project_landing_page.png')}
+                alt=""
+              />
             </div>
           </div>
         </div>
