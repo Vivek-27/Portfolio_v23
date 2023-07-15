@@ -395,7 +395,7 @@ const Work = () => {
               />
             </div>
           </div>
-          <div className="project1 item">
+          <div className="project1 item project-even">
             <div className="left project2">
               <div className="card1 card"></div>
               <div className="card2 card">
@@ -475,7 +475,7 @@ const Work = () => {
             <div className="left">
               <img
                 style={{ scale: '.8' }}
-                className="img-p3"
+                className="img-p3 project-parallax-img"
                 src={require('../images/project_landing_page.png')}
                 alt=""
               />
