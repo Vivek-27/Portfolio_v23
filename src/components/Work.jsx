@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import './work.css';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
+import SimpleImageSlider from 'react-simple-image-slider';
+
 const Work = () => {
   const btnClicked = { backgroundColor: 'black', color: 'white' };
   const [allBtnStyle, setAllBtnStyle] = useState({
@@ -12,6 +14,21 @@ const Work = () => {
   });
   const [liveBtnStyle, setLiveBtnStyle] = useState({});
   const [devBtnStyle, setDevBtnStyle] = useState({});
+  const [imgIndex, setImgIndex] = useState(0);
+  const images = [
+    {
+      url: require('../images/project_vision.png')
+    },
+    {
+      url: require('../images/project_vision2.png')
+    },
+    {
+      url: require('../images/project_vision3.png')
+    },
+    {
+      url: require('../images/project_vision4.png')
+    }
+  ];
 
   const btnStyleChange = (e) => {
     if (e === 'all') {
@@ -340,7 +357,7 @@ const Work = () => {
           </div>
         </div>
         <div className="projects">
-          <div className="project1 item">
+          <div className="project1 item instagram-clone">
             <div className="left-text">
               <h5>Instagram Clone </h5>
               <p>
@@ -397,7 +414,7 @@ const Work = () => {
             </div>
           </div>
 
-          <div className="project1 item project-even">
+          <div className="project1 item project-even file-sharing-app">
             <div className="left project2">
               <div className="card1 card"></div>
               <div className="card2 card">
@@ -442,7 +459,7 @@ const Work = () => {
             </div>
           </div>
 
-          <div className="project1 item ">
+          <div className="project1 item parallax-landing-page">
             <div className="left-text">
               <h5>Parallax Landing Page ⭐</h5>
               <p>
@@ -484,7 +501,7 @@ const Work = () => {
             </div>
           </div>
 
-          <div className="project1 item">
+          <div className="project1 item youtube-clone">
             <div className="left-text">
               <h5>YouTube Clone </h5>
               <p>
@@ -529,6 +546,54 @@ const Work = () => {
                 src={require('../images/project_youtube.png')}
                 alt=""
               />
+            </div>
+          </div>
+
+          <div className="project1 item project-even file-sharing-app">
+            <div className="left project2">
+              <SimpleImageSlider
+                width={'90%'}
+                height={'70%'}
+                images={images}
+                navSize={20}
+                loop
+                autoPlay
+                showNavs={true}
+                navMargin={5}
+              />
+            </div>
+
+            <div className="left-text">
+              <h5>Apple Vision Web</h5>
+              <p>
+                This is a website of Apple Vision created using HTML, CSS and
+                JavaScript only. COntains some cool looking apple vision
+                animations.
+              </p>
+              <div className="end">
+                {/* <span>
+                  <p>Features —</p>
+                  <ul>
+                    <li>Apple</li>
+                    <li>Provides file sharable link.</li>
+                  </ul>
+                </span> */}
+                <div className="links">
+                  <a
+                    style={{ color: 'orange' }}
+                    href="https://visionapple.netlify.app/"
+                    target="_blank"
+                  >
+                    Visit
+                  </a>
+                  <a
+                    href="https://github.com/Vivek-27/Apple-Vision-Web"
+                    target="_blank"
+                  >
+                    View Code
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>

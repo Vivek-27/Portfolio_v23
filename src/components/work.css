@@ -116,6 +116,9 @@
 }
 
 @media (max-width: 900px) {
+  .slider {
+    width: 100px !important;
+  }
   #home > .mid-text {
     width: 90%;
     padding-top: 20%;
@@ -213,11 +216,6 @@
   justify-content: end;
 }
 
-#home > .projects > .project1 > .left > .project-parallax-img {
-  position: relative;
-  right: 10%;
-  scale: 0.55 !important;
-}
 #home > .projects > .project1 > .left > .img-p1 {
   position: absolute;
   height: 34vw;
@@ -299,7 +297,6 @@
 @media (max-width: 900px) {
   #home > .projects {
     width: 95%;
-    background-color: aqua;
   }
 
   #home > .projects > .item {
@@ -414,8 +411,8 @@
 
   #home > .projects > .project1 > .left > .project-parallax-img {
     position: relative;
-    left: -20%;
+    left: -35%;
     bottom: -13%;
-    scale: 0.85;
+    scale: 1.3 !important;
   }
 }
