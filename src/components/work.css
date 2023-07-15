@@ -169,7 +169,7 @@
 }
 
 #home > .projects > .project1 > .left-text > h5 {
-  font-family: 'Grand Hotel', cursive;
+  /* font-family: 'Grand Hotel', cursive; */
   font-size: 3.6vw;
 }
 
@@ -211,6 +211,12 @@
   display: flex;
   align-items: end;
   justify-content: end;
+}
+
+#home > .projects > .project1 > .left > .project-parallax-img {
+  position: relative;
+  right: 10%;
+  scale: 0.55 !important;
 }
 #home > .projects > .project1 > .left > .img-p1 {
   position: absolute;
@@ -293,6 +299,7 @@
 @media (max-width: 900px) {
   #home > .projects {
     width: 95%;
+    background-color: aqua;
   }
 
   #home > .projects > .item {
@@ -314,7 +321,7 @@
     padding-left: 0px;
   }
   #home > .projects > .project1 > .left-text > h5 {
-    font-family: 'Grand Hotel', cursive;
+    /* font-family: 'Grand Hotel', cursive; */
     font-size: 9.2vw;
     padding: 25px 0;
   }
@@ -360,13 +367,13 @@
   }
   #home > .projects > .project1 > .left > .img-p3 {
     height: 68vw;
-    padding-right: 40px;
+    margin-right: 40px;
   }
 
   #home > .projects > .project1 > .left > .card {
     height: 200px;
     width: 75%;
-    background-color: rgb(56, 232, 232);
+    /* background-color: rgb(56, 232, 232); */
   }
   #home > .projects > .project1 > .project2 {
     height: 70vh;
@@ -407,8 +414,8 @@
 
   #home > .projects > .project1 > .left > .project-parallax-img {
     position: relative;
-    left: -35%;
+    left: -20%;
     bottom: -13%;
-    scale: 1.4 !important;
+    scale: 0.85;
   }
 }

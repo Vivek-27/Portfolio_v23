@@ -350,12 +350,13 @@ const Work = () => {
               </p>
               <div className="end">
                 <span>
-                  <p>Key Features —</p>
+                  <p>Features —</p>
                   <ul>
-                    <li>Sign Up and Login</li>
+                    <li>Follow other users</li>
                     <li>Post Images</li>
-                    <li>Like post</li>
+                    <li>Like posts</li>
                     <li>Comment on post</li>
+                    <li>Sign Up and Login</li>
                     <li>Edit Profile</li>
                   </ul>
                 </span>
@@ -395,6 +396,7 @@ const Work = () => {
               />
             </div>
           </div>
+
           <div className="project1 item project-even">
             <div className="left project2">
               <div className="card1 card"></div>
@@ -440,7 +442,7 @@ const Work = () => {
             </div>
           </div>
 
-          <div className="project1 item">
+          <div className="project1 item ">
             <div className="left-text">
               <h5>Parallax Landing Page ⭐</h5>
               <p>
@@ -477,6 +479,54 @@ const Work = () => {
                 style={{ scale: '.8' }}
                 className="img-p3 project-parallax-img"
                 src={require('../images/project_landing_page.png')}
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div className="project1 item">
+            <div className="left-text">
+              <h5>YouTube Clone </h5>
+              <p>
+                This is a YouTube Clone that implements the main features of
+                YouTube using MERN Stack, here you will able to create your own
+                channel and post videos as you do in Youtube.
+              </p>
+              <div className="end">
+                <span>
+                  <p>Features —</p>
+                  <ul>
+                    <li>Post Videos</li>
+                    <li>Subscribe to any Channel</li>
+                    <li>Like and Dislike any video</li>
+                    <li>Comment on video</li>
+                  </ul>
+                </span>
+                <div className="links">
+                  <a style={{ color: 'orange' }} href="" target="_blank">
+                    Visit
+                  </a>
+                  <a href="https://github.com/Vivek-27/Youtube" target="_blank">
+                    View Code
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="left project2">
+              <img
+                className="img-p2"
+                src={require('../images/project_youtube2.png')}
+                alt=""
+              />
+
+              <img
+                className="img-p3"
+                src={require('../images/project_youtube3.png')}
+                alt=""
+              />
+              <img
+                className="img-p1"
+                src={require('../images/project_youtube.png')}
                 alt=""
               />
             </div>
