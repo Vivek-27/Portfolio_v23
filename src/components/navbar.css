@@ -83,16 +83,17 @@
   );
 }
 
-.logo > .nav-link > .logo-text > p:hover {
-  animation: logo-left 1s forwards;
+.logo > .nav-link > .logo-text > p {
+  /* transition-duration: 5s; */
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
 }
-
-@keyframes logo-left {
-  from {
-  }
-  to {
-    transform: translateX(-58%);
-  }
+.logo > .nav-link > .logo-text > p:hover {
+  /* animation: logo-left 1s forwards; */
+  transform: translateX(-58%);
 }
 
 .nav-item {
