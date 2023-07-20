@@ -261,6 +261,11 @@
   cursor: pointer;
   scale: 1;
   animation: menu2-appear 0.2s linear;
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  -ms-transition: all 0.1s ease;
+  transition: all 0.1s ease;
 }
 
 @keyframes menu2-appear {
@@ -366,9 +371,11 @@
   margin-right: 20px;
   margin-bottom: 0;
   cursor: pointer;
+  transition: all 1s;
 }
 #page3 > .top > h2 > .passport-img:hover {
-  animation: rotate-img 5s forwards;
+  /* animation: rotate-img 5s forwards; */
+  transform: rotate(60deg);
 }
 @keyframes rotate-img {
   0% {

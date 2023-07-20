@@ -50,6 +50,11 @@
   border: 1px solid rgba(128, 128, 128, 0.467);
   cursor: pointer;
   animation: ease-in-bottom 0.5s linear;
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  -ms-transition: all 0.1s ease;
+  transition: all 0.1s ease;
 }
 
 #home > .mid-menu > .left > button:hover {
@@ -74,6 +79,11 @@
   border-radius: 50%;
   border: 1px solid rgba(128, 128, 128, 0.467);
   cursor: pointer;
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  -ms-transition: all 0.1s ease;
+  transition: all 0.1s ease;
 }
 
 #home > .mid-menu > .right > .list-view {

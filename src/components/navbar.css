@@ -52,6 +52,10 @@
   cursor: pointer;
 }
 
+.nav-item > .point {
+  transition: all 0.1s;
+}
+
 .nav-item > .point:hover {
   transform: translate(0%, 10%);
 }
