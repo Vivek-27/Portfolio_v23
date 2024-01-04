@@ -15,19 +15,16 @@ const Work = () => {
   const [liveBtnStyle, setLiveBtnStyle] = useState({});
   const [devBtnStyle, setDevBtnStyle] = useState({});
   const [imgIndex, setImgIndex] = useState(0);
+  const imagesFlipkartProj = [
+    { url: require('../images/flipkartProject/p1.png') },
+    { url: require('../images/flipkartProject/p2.png') },
+    { url: require('../images/flipkartProject/p3.png') }
+  ];
   const images = [
-    {
-      url: require('../images/project_vision.png')
-    },
-    {
-      url: require('../images/project_vision2.png')
-    },
-    {
-      url: require('../images/project_vision3.png')
-    },
-    {
-      url: require('../images/project_vision4.png')
-    }
+    { url: require('../images/project_vision.png') },
+    { url: require('../images/project_vision2.png') },
+    { url: require('../images/project_vision3.png') },
+    { url: require('../images/project_vision4.png') }
   ];
 
   const btnStyleChange = (e) => {
@@ -416,40 +413,47 @@ const Work = () => {
 
           <div className="project1 item project-even file-sharing-app">
             <div className="left project2">
-              <div className="card1 card"></div>
-              <div className="card2 card">
-                <img src={require('../images/project_fileShare.png')} alt="" />
-              </div>
-              <div className="card3 card"></div>
+              <SimpleImageSlider
+                width={'90%'}
+                height={'70%'}
+                images={imagesFlipkartProj}
+                navSize={20}
+                loop
+                autoPlay
+                showNavs={true}
+                navMargin={5}
+              />
             </div>
 
             <div className="left-text">
-              <h5>File Share Online</h5>
+              <h5>
+                Flipkart Clone: <h6>MERN Stack with JWT, Paytm & Redux</h6>
+              </h5>
               <p>
-                This File sharing site provide services to access digital media
-                like photos, videos, documents, etc., from anywhere to its
-                users. These apps will help you to transfer large files easily.
-                It provide advanced link which you can share to person you want
-                to access that file.
+                Shop effortlessly with our MERN stack Flipkart clone. Secure
+                authentication with JWT, swift transactions via Paytm, and a
+                dynamic UI powered by Redux make for a seamless online shopping
+                experience.
               </p>
               <div className="end">
                 <span>
-                  <p>Features —</p>
+                  <p>Key Features:</p>
                   <ul>
-                    <li>Easy File Share online</li>
-                    <li>Provides file sharable link.</li>
+                    <li>Secure JWT Authentication</li>
+                    <li>Paytm Payment Gateway Integration</li>
+                    <li>Responsive UI with Redux State Management</li>
                   </ul>
                 </span>
                 <div className="links">
                   <a
                     style={{ color: 'orange' }}
-                    href="https://filesharingonline.netlify.app/"
+                    href="https://flipkart-com-cl.netlify.app/"
                     target="_blank"
                   >
                     Visit
                   </a>
                   <a
-                    href="https://github.com/Vivek-27/FileSharingOnline"
+                    href="https://github.com/Vivek-27/Flipkart-Clone.git"
                     target="_blank"
                   >
                     View Code
@@ -588,6 +592,50 @@ const Work = () => {
                   </a>
                   <a
                     href="https://github.com/Vivek-27/Apple-Vision-Web"
+                    target="_blank"
+                  >
+                    View Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="project1 item project-even file-sharing-app">
+            <div className="left project2">
+              <div className="card1 card"></div>
+              <div className="card2 card">
+                <img src={require('../images/project_fileShare.png')} alt="" />
+              </div>
+              <div className="card3 card"></div>
+            </div>
+
+            <div className="left-text">
+              <h5>File Share Online</h5>
+              <p>
+                This File sharing site provide services to access digital media
+                like photos, videos, documents, etc., from anywhere to its
+                users. These apps will help you to transfer large files easily.
+                It provide advanced link which you can share to person you want
+                to access that file.
+              </p>
+              <div className="end">
+                <span>
+                  <p>Features —</p>
+                  <ul>
+                    <li>Easy File Share online</li>
+                    <li>Provides file sharable link.</li>
+                  </ul>
+                </span>
+                <div className="links">
+                  <a
+                    style={{ color: 'orange' }}
+                    href="https://filesharingonline.netlify.app/"
+                    target="_blank"
+                  >
+                    Visit
+                  </a>
+                  <a
+                    href="https://github.com/Vivek-27/FileSharingOnline"
                     target="_blank"
                   >
                     View Code
