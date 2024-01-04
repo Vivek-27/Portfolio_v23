@@ -102,7 +102,12 @@ const NavBar = () => {
               </div>
             </Link>
             <div onClick={() => setMenu((prev) => !prev)} className="nav-menu">
-              <img className="hamburger" src={hamburger} alt="" />
+              <img
+                style={{ filter: 'invert(1)' }}
+                className="hamburger"
+                src={hamburger}
+                alt=""
+              />
             </div>
           </div>
           <div className="nav-link">

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import transition from '../transition';
 import { motion } from 'framer-motion';
-import portrate from '../images/portrate.png';
+import portrate from '../images/portrate/Layer 1.png';
 import './home.css';
 import { Parallax, Background } from 'react-parallax';
 import { gsap } from 'gsap';

@@ -69,11 +69,11 @@
 }
 .animated-image {
   position: relative;
-  width: 80%;
+  width: 50%;
   height: auto;
-  left: 55%;
+  left: 85%;
   opacity: 1;
-  background-color: #ffffff;
+  padding-top: 7%;
   backdrop-filter: blur(25px);
   animation: ease-in-bottom 1s linear;
 }
@@ -95,11 +95,10 @@
 @media (max-width: 900px) {
   .animated-image {
     padding-top: 80px;
-    width: 410px;
+    width: 400px;
     left: 0;
-    background-image: url('https://i.pinimg.com/originals/98/7b/ba/987bba5e582181c0b5e9cfe19db71445.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    padding-left: 60px;
+    background-image: url('https://images.unsplash.com/photo-1616004655123-818cbd4b3143?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
   }
 
   .projects {
