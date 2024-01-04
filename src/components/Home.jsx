@@ -125,11 +125,6 @@ const Home = () => {
       <div id="page">
         <Parallax id="parallax" strength={200}>
           <Background className="background">
-            <img
-              className="bgimg"
-              src="https://static.vecteezy.com/system/resources/previews/005/147/115/original/hand-draw-blue-brush-stroke-watercolor-design-free-vector.jpg"
-              alt=""
-            />
             <img className="animated-image" src={portrate} alt="" />
           </Background>
           <div className="hero">
