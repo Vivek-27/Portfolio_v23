@@ -98,7 +98,9 @@ const NavBar = () => {
             <Link className="nav-link" to="/">
               <img src={require('../images/sm-img.png')} alt="" />
               <div className="logo-text">
-                <p>Code by Vivek Kumar</p>
+                <p style={{ color: `${page === 'contact' ? '#f2f2f2' : ''}` }}>
+                  Code by Vivek Kumar
+                </p>
               </div>
             </Link>
             <div onClick={() => setMenu((prev) => !prev)} className="nav-menu">
