@@ -216,7 +216,7 @@ const Work = () => {
                 <div className="links">
                   <a
                     style={{ color: 'orange' }}
-                    href="https://instagram-clone-v.netlify.app/"
+                    href="https://instagram-cc.vercel.app/"
                     target="_blank"
                   >
                     Visit
