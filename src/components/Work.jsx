@@ -20,6 +20,13 @@ const Work = () => {
     { url: require('../images/flipkartProject/p2.png') },
     { url: require('../images/flipkartProject/p3.png') }
   ];
+
+  const imagesTaskProject = [
+    { url: require('../images/taskManagerProject/p1.png') },
+    { url: require('../images/taskManagerProject/p2.png') },
+    { url: require('../images/taskManagerProject/p3.png') },
+    { url: require('../images/taskManagerProject/p4.png') }
+  ];
   const images = [
     { url: require('../images/project_vision.png') },
     { url: require('../images/project_vision2.png') },
@@ -49,8 +56,6 @@ const Work = () => {
     gsap.utils.toArray('.project1>.left>.img-p1').forEach(function (elem) {
       ScrollTrigger.create({
         trigger: elem,
-        start: 'top 85%',
-        end: 'bottom 20%',
         onEnter: function () {
           gsap.fromTo(
             elem,
@@ -63,40 +68,12 @@ const Work = () => {
               overwrite: 'auto'
             }
           );
-        },
-        onLeave: function () {
-          gsap.fromTo(
-            elem,
-            { autoAlpha: 1 },
-            { autoAlpha: 0, overwrite: 'auto' }
-          );
-        },
-        onEnterBack: function () {
-          gsap.fromTo(
-            elem,
-            { y: 70, autoAlpha: 0 },
-            {
-              duration: 0.5,
-              y: 0,
-              autoAlpha: 1,
-              overwrite: 'auto'
-            }
-          );
-        },
-        onLeaveBack: function () {
-          gsap.fromTo(
-            elem,
-            { autoAlpha: 1 },
-            { autoAlpha: 0, overwrite: 'auto' }
-          );
         }
       });
     });
     gsap.utils.toArray('.project1>.left>.img-p2').forEach(function (elem) {
       ScrollTrigger.create({
         trigger: elem,
-        start: 'top 85%',
-        end: 'bottom 20%',
         onEnter: function () {
           gsap.fromTo(
             elem,
@@ -107,32 +84,6 @@ const Work = () => {
               autoAlpha: 1,
               overwrite: 'auto'
             }
-          );
-        },
-        onLeave: function () {
-          gsap.fromTo(
-            elem,
-            { autoAlpha: 1 },
-            { autoAlpha: 0, overwrite: 'auto' }
-          );
-        },
-        onEnterBack: function () {
-          gsap.fromTo(
-            elem,
-            { x: 0, autoAlpha: 0 },
-            {
-              duration: 1.5,
-              x: -120,
-              autoAlpha: 1,
-              overwrite: 'auto'
-            }
-          );
-        },
-        onLeaveBack: function () {
-          gsap.fromTo(
-            elem,
-            { autoAlpha: 1 },
-            { autoAlpha: 0, overwrite: 'auto' }
           );
         }
       });
@@ -140,8 +91,6 @@ const Work = () => {
     gsap.utils.toArray('.project1>.left>.img-p3').forEach(function (elem) {
       ScrollTrigger.create({
         trigger: elem,
-        start: 'top 85%',
-        end: 'bottom 20%',
         onEnter: function () {
           gsap.fromTo(
             elem,
@@ -152,32 +101,6 @@ const Work = () => {
               autoAlpha: 1,
               overwrite: 'auto'
             }
-          );
-        },
-        onLeave: function () {
-          gsap.fromTo(
-            elem,
-            { autoAlpha: 1 },
-            { autoAlpha: 0, overwrite: 'auto' }
-          );
-        },
-        onEnterBack: function () {
-          gsap.fromTo(
-            elem,
-            { x: 30, autoAlpha: 0 },
-            {
-              duration: 2,
-              x: 120,
-              autoAlpha: 1,
-              overwrite: 'auto'
-            }
-          );
-        },
-        onLeaveBack: function () {
-          gsap.fromTo(
-            elem,
-            { autoAlpha: 1 },
-            { autoAlpha: 0, overwrite: 'auto' }
           );
         }
       });
@@ -186,8 +109,6 @@ const Work = () => {
     gsap.utils.toArray('.project1>.project2>.card3').forEach(function (elem) {
       ScrollTrigger.create({
         trigger: elem,
-        start: 'top 85%',
-        end: 'bottom 20%',
         onEnter: function () {
           gsap.fromTo(
             elem,
@@ -198,32 +119,6 @@ const Work = () => {
               autoAlpha: 1,
               overwrite: 'auto'
             }
-          );
-        },
-        onLeave: function () {
-          gsap.fromTo(
-            elem,
-            { autoAlpha: 1 },
-            { autoAlpha: 0, overwrite: 'auto' }
-          );
-        },
-        onEnterBack: function () {
-          gsap.fromTo(
-            elem,
-            { x: -10, autoAlpha: 0 },
-            {
-              duration: 2,
-              x: 50,
-              autoAlpha: 1,
-              overwrite: 'auto'
-            }
-          );
-        },
-        onLeaveBack: function () {
-          gsap.fromTo(
-            elem,
-            { autoAlpha: 1 },
-            { autoAlpha: 0, overwrite: 'auto' }
           );
         }
       });
@@ -231,8 +126,6 @@ const Work = () => {
     gsap.utils.toArray('.project1>.project2>.card1').forEach(function (elem) {
       ScrollTrigger.create({
         trigger: elem,
-        start: 'top 85%',
-        end: 'bottom 20%',
         onEnter: function () {
           gsap.fromTo(
             elem,
@@ -243,32 +136,6 @@ const Work = () => {
               autoAlpha: 1,
               overwrite: 'auto'
             }
-          );
-        },
-        onLeave: function () {
-          gsap.fromTo(
-            elem,
-            { autoAlpha: 1 },
-            { autoAlpha: 0, overwrite: 'auto' }
-          );
-        },
-        onEnterBack: function () {
-          gsap.fromTo(
-            elem,
-            { x: 10, autoAlpha: 0 },
-            {
-              duration: 2,
-              x: -50,
-              autoAlpha: 1,
-              overwrite: 'auto'
-            }
-          );
-        },
-        onLeaveBack: function () {
-          gsap.fromTo(
-            elem,
-            { autoAlpha: 1 },
-            { autoAlpha: 0, overwrite: 'auto' }
           );
         }
       });
@@ -276,8 +143,6 @@ const Work = () => {
     gsap.utils.toArray('.project1>.project2>.card2').forEach(function (elem) {
       ScrollTrigger.create({
         trigger: elem,
-        start: 'top 85%',
-        end: 'bottom 20%',
         onEnter: function () {
           gsap.fromTo(
             elem,
@@ -288,32 +153,6 @@ const Work = () => {
               autoAlpha: 1,
               overwrite: 'auto'
             }
-          );
-        },
-        onLeave: function () {
-          gsap.fromTo(
-            elem,
-            { autoAlpha: 1 },
-            { autoAlpha: 0, overwrite: 'auto' }
-          );
-        },
-        onEnterBack: function () {
-          gsap.fromTo(
-            elem,
-            { scale: 0.9, autoAlpha: 0 },
-            {
-              duration: 0.5,
-              scale: 1,
-              autoAlpha: 1,
-              overwrite: 'auto'
-            }
-          );
-        },
-        onLeaveBack: function () {
-          gsap.fromTo(
-            elem,
-            { autoAlpha: 1 },
-            { autoAlpha: 0, overwrite: 'auto' }
           );
         }
       });
@@ -463,31 +302,33 @@ const Work = () => {
             </div>
           </div>
 
-          <div className="project1 item parallax-landing-page">
+          <div className="project1 item snakewatergun">
             <div className="left-text">
-              <h5>Parallax Landing Page ⭐</h5>
+              <h5>Snake Water Gun Game⭐</h5>
               <p>
-                This is complete Vanilla JavaScript project. I have used GSAP to
-                animate the parallax effect.
+                Multiplayer online game, can play with friends or with
+                strangers. Integerated Socket.io technology to adress smooth
+                game experience.(please wait for at least 2min for server to run
+                as I am using free ver.)
               </p>
               <div className="end">
                 <span>
                   <p>Features —</p>
                   <ul>
-                    <li>Simple Design</li>
-                    <li>Parallax effect.</li>
+                    <li>Play with friends using private key</li>
+                    <li>Play with random Strangers.</li>
                   </ul>
                 </span>
                 <div className="links">
                   <a
                     style={{ color: 'orange' }}
-                    href="https://parallax-landing-page23.netlify.app/"
+                    href="https://snake-water-gun-2aot.onrender.com/"
                     target="_blank"
                   >
                     Visit
                   </a>
                   <a
-                    href="https://github.com/Vivek-27/Parallax-Landing-Page"
+                    href="https://github.com/Vivek-27/Snake_Water_Gun.git"
                     target="_blank"
                   >
                     View Code
@@ -499,12 +340,61 @@ const Work = () => {
               <img
                 style={{ scale: '.8' }}
                 className="img-p3 project-parallax-img"
-                src={require('../images/project_landing_page.png')}
+                src={require('../images/project_snake_water_gun.png')}
                 alt=""
               />
             </div>
           </div>
+          <div className="project1 item project-even task_management">
+            <div className="left project2">
+              <SimpleImageSlider
+                width={'100%'}
+                height={'45%'}
+                images={imagesTaskProject}
+                navSize={20}
+                loop
+                autoPlay
+                showNavs={true}
+                navMargin={5}
+              />
+            </div>
 
+            <div className="left-text">
+              <h5>
+                Task Manager:{' '}
+                <h6>
+                  To-do list webapp, view task and complete from anywhere using
+                  login functionality.
+                </h6>
+              </h5>
+              <p></p>
+              <div className="end">
+                <span>
+                  <p>Key Features:</p>
+                  <ul>
+                    <li>Login and Signup</li>
+                    <li>Protable</li>
+                    <li>Task Schedule</li>
+                  </ul>
+                </span>
+                <div className="links">
+                  <a
+                    style={{ color: 'orange' }}
+                    href="https://relaxed-kangaroo-454bb5.netlify.app/"
+                    target="_blank"
+                  >
+                    Visit
+                  </a>
+                  <a
+                    href="https://github.com/Vivek-27/TaskManager"
+                    target="_blank"
+                  >
+                    View Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="project1 item youtube-clone">
             <div className="left-text">
               <h5>YouTube Clone </h5>
@@ -600,6 +490,49 @@ const Work = () => {
               </div>
             </div>
           </div>
+
+          <div className="project1 item parallax-landing-page">
+            <div className="left-text">
+              <h5>Parallax Landing Page ⭐</h5>
+              <p>
+                This is complete Vanilla JavaScript project. I have used GSAP to
+                animate the parallax effect.
+              </p>
+              <div className="end">
+                <span>
+                  <p>Features —</p>
+                  <ul>
+                    <li>Simple Design</li>
+                    <li>Parallax effect.</li>
+                  </ul>
+                </span>
+                <div className="links">
+                  <a
+                    style={{ color: 'orange' }}
+                    href="https://parallax-landing-page23.netlify.app/"
+                    target="_blank"
+                  >
+                    Visit
+                  </a>
+                  <a
+                    href="https://github.com/Vivek-27/Parallax-Landing-Page"
+                    target="_blank"
+                  >
+                    View Code
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="left">
+              <img
+                style={{ scale: '.8' }}
+                className="img-p3 project-parallax-img"
+                src={require('../images/project_landing_page.png')}
+                alt=""
+              />
+            </div>
+          </div>
+
           <div className="project1 item project-even file-sharing-app">
             <div className="left project2">
               <div className="card1 card"></div>
@@ -608,7 +541,6 @@ const Work = () => {
               </div>
               <div className="card3 card"></div>
             </div>
-
             <div className="left-text">
               <h5>File Share Online</h5>
               <p>

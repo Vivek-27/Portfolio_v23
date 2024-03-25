@@ -32,7 +32,9 @@ div {
 h1 {
   color: #d14848;
 }
-
+#loading {
+  transition: all 0.15s linear 0.1s;
+}
 .slide-in {
   position: fixed;
   top: 0;

@@ -37,6 +37,7 @@
   width: 80%;
   overflow: hidden;
   padding-left: 2vw;
+  padding-bottom: 10vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -45,16 +46,20 @@
 .hero > .left > p {
   font-size: 2vw;
   animation: ease-in-bottom 1s forwards;
-  padding-bottom: 1vw;
 }
 
 .hero > .left > h4 {
   font-weight: 500;
   color: #1b1b1b;
   font-size: 7vw;
+  padding-bottom: 5vh;
   animation: ease-in-bottom 0.5s linear !important;
 }
 
+.hero > .left > a {
+  width: 16vw;
+  height: 4vw;
+}
 .hero > .left > a > button {
   width: 16vw;
   height: 4vw;
