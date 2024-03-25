@@ -203,15 +203,6 @@ const Work = () => {
               </p>
               <div className="end">
                 <span>
-                  <p>Credentials</p>
-                  <ul>
-                    <li>email:- instagram@gmail.com</li>
-                  </ul>
-                  <ul>
-                    <li>password:- admin</li>
-                  </ul>
-                </span>
-                <span>
                   <p>Features —</p>
                   <ul>
                     <li>Follow other users</li>
@@ -220,6 +211,15 @@ const Work = () => {
                     <li>Comment on post</li>
                     <li>Sign Up and Login</li>
                     <li>Edit Profile</li>
+                  </ul>
+                </span>
+                <span>
+                  <p>Credentials (phony) -</p>
+                  <ul>
+                    <li>email:- instagram@gmail.com</li>
+                  </ul>
+                  <ul>
+                    <li>password:- admin</li>
                   </ul>
                 </span>
                 <div className="links">
