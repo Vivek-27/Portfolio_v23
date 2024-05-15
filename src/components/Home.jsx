@@ -125,7 +125,7 @@ const Home = () => {
       <div id="page">
         <Parallax id="parallax" strength={200}>
           <Background className="background">
-            <img className="animated-image" src={portrate} alt="" />
+            <img className="animated-image" src={portrate} alt="" fetchpriority="high" />
           </Background>
           <div className="hero">
             <div id="left" className="left">
